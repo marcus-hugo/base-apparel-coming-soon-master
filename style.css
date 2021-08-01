@@ -65,21 +65,16 @@ p {
   line-height: 1.5;
 }
 
-form {
+.email-input {
   margin-top: 30px;
   border: 1px solid var(--desaturated-red);
+  background: var(--gradient-light-peach);
+  color: var(--desaturated-red);
   border-radius: 20px;
   width: 300px;
   height: 45px;
 }
 
-.text-input {
-  border: none;
-  outline: none;
-  background-color: var(--gradient-light-peach);
-  color: var(--desaturated-red);
-  height: 43px;
-}
 
 .submit-button {
   display: inline-block;
@@ -88,9 +83,11 @@ form {
   background: var(--gradient-peach);
   border-radius: 20px;
   position: relative;
-  left: 25px;
-  bottom: 7px;
+  right: 64px;
+  top: 4px;
+  filter: drop-shadow(0px 8px 10px var(--desaturated-red));
 }
+
 
 .button-arrow {
   display: inline-block;
