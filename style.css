@@ -21,6 +21,14 @@ body {
   min-height: 100vh;
 }
 
+main {
+  display: flex;
+  flex-direction: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 /* main content */
 .container {
   min-width: 375px;
