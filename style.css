@@ -51,6 +51,13 @@ main {
   padding: 30px 0;
 }
 
+.image-container {
+  background-image: url(images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 250px;
+}
+
 h1 {
   margin-top: 60px;
   font-size: 40px;
@@ -85,6 +92,7 @@ input {
   border-radius: 20px;
   width: 300px;
   height: 45px;
+  padding-left: 20px;
 }
 
 
@@ -112,10 +120,6 @@ input {
   cursor: pointer;
 }
 
-input:focus {
-  border: 2px solid var(--soft-red);
-}
-
 /* footer */
 .attribution {
   font-size: 11px;
@@ -124,4 +128,8 @@ input:focus {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media(min-width: 1024px){
+
 }
