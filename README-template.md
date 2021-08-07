@@ -48,7 +48,7 @@ Started the mobile layout first with Flexbox, then switched to Grid for the Desk
 
 ### What I learned
 How to use basic form validation with HTML.  How to structure the form
-for submitting an email address.
+for submitting an email address.  Using multiple filters during hover state.
 
 ### Continued development
 More practice with Grid.
