@@ -30,7 +30,7 @@ main {
 }
 
 /* main content */
-.container {
+.main-container {
   min-width: 375px;
   display: flex;
   flex-direction: column;
@@ -51,11 +51,14 @@ main {
   padding: 30px 0;
 }
 
-.image-container {
-  background-image: url(images/hero-mobile.jpg);
-  background-repeat: no-repeat;
+.mobile-image-container {
+  display: inline;
   width: 375px;
   height: 250px;
+}
+
+.hero-desktop-image {
+  display: none;
 }
 
 h1 {
@@ -95,7 +98,6 @@ input {
   padding-left: 20px;
 }
 
-
 .submit-button {
   display: block;
   width: 60px;
@@ -107,7 +109,6 @@ input {
   left: 245px;
   filter: drop-shadow(0px 8px 10px var(--desaturated-red));
 }
-
 
 .button-arrow {
   display: inline-block;
@@ -130,6 +131,82 @@ input {
   color: hsl(228, 45%, 44%);
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1024px) {
+  body {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-}
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 30% 15% 30%;
+    min-height: 100vh;
+    max-width: 1440px;
+    height: 800px;
+  }
+
+  .main-container {
+    grid-area: 1/ 1/ 5/ 2;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 100px;
+  }
+
+  .logo-container {
+    margin: 0;
+    margin-top: -90px;
+    margin-bottom: 105px;
+  }
+
+   .logo {
+     max-width: 158px;
+   }
+
+  .hero-desktop-image {
+    display: inline;
+  }
+
+  .mobile-image-container {
+    display: none;
+  }
+
+  .desktop-image-container {
+    grid-area: 1/ 2/ 5/ 3;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 65px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  p {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    margin-right: 215px;
+    font-size: 16px;
+  }
+
+  form {
+    margin-top: 40px;
+  }
+
+  input {
+    height: 55px;
+    width: 350px;
+  }
+
+  .submit-button {
+    width: 70px;
+    height: 55px;
+    left: 280px;
+    bottom: 55px;
+  }
