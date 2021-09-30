@@ -23,8 +23,7 @@ body {
 
 main {
   display: flex;
-  flex-direction: center;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
