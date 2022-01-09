@@ -44,7 +44,6 @@ Started the mobile layout first with Flexbox, then switched to Grid for the Desk
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 How to use basic form validation with HTML.  How to structure the form
